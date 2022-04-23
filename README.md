@@ -13,6 +13,7 @@ Then they can create task, edit task, delete task and also view task .
 ```
 
 ``` 
-If any user do not logout then next time they can easily login in to the system with previous token. But if any user logout from the system then the token will removed and next time it will generate a new token.
+If any user do not logout then next time they can easily login in to the system with previous token. 
+But if any user logout from the system then the token will removed and next time it will generate a new token.
 
 ``` 
