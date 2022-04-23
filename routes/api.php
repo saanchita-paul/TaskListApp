@@ -23,9 +23,9 @@ use App\Http\Requests\LoginRequest;
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/task-list',[TaskController::class,'list']);
-    Route::post('/tasks',[TaskController::class,'store']);
-    Route::put('/tasks/{id}',[TaskController::class,'update']);
-    Route::delete('/tasks/{id}',[TaskController::class,'destroy']);
+    Route::post('/tasks/store',[TaskController::class,'store']);
+    Route::put('/tasks/update/{id}',[TaskController::class,'update']);
+    Route::delete('/tasks/delete/{id}',[TaskController::class,'destroy']);
     Route::delete('/deleteusertask/{userid}/{taskid}',[TaskController::class,'deleteUserTask']);
     Route::post('/logout',[AuthController::class,'logout']);
 });
